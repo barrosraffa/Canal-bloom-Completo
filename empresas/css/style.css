@@ -1,0 +1,249 @@
+
+@font-face {
+    font-family: 'MarkPro';
+    src: 
+    url('../../Fontes/MarkPro/MarkPro.eot') format('embedded-opentype'),
+    url('../../Fontes/MarkPro/MarkPro.woff') format('woff'), 
+    url('../../Fontes/MarkPro/MarkPro.ttf')  format('truetype'),
+    url('../../Fontes/MarkPro/MarkPro.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MarkOT-Bold';
+    src: 
+    url('../../Fontes/MarkOT-Bold/MarkOT-Bold.eot') format('embedded-opentype'),
+    url('../../Fontes/MarkOT-Bold/MarkOT-Bold.woff') format('woff'),
+    url('../../Fontes/MarkOT-Bold/MarkOT-Bold.ttf')  format('truetype'),
+    url('../../Fontes/MarkOT-Bold/MarkOT-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MarkPro';
+}
+
+
+h2 {
+    font-family: 'MarkOT-Bold';
+}
+.container{
+    width: 100%;
+}
+
+.header{
+    background-image: url(../../img/Artboard.16.copy2.png);
+    background-position: center;
+}
+
+.navegacao {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.navegacao__logo {
+    width: 200px;
+}
+
+.navegacao__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.navegacao__menu {
+    display: block;
+}
+
+.menu__mobile {
+    display: none;
+}
+
+.menu__link {
+    padding: 0 0 0 35px;
+}
+
+.menu__botao {
+    border-radius: 25px;
+    padding: 10px 24px;
+    margin-left: 10px;
+}
+
+.branco {
+    border: #793df5 solid 1px;
+}
+
+.roxo {
+    background-color: #793df5;
+    color: #ffffff;
+}
+
+/* CABEÇALHO */
+
+.information__header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+
+.btn__purple{
+    text-transform: uppercase;
+    color: #fff;
+    background: #793df5;
+    padding: 10px 40px;
+    border-radius: 20em;
+    transition: .25s;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+.title__purple{
+    color: #793df5;
+    font-size: 46px;
+}
+
+.text__gray{
+    color: #d7cbf7;
+    font-size: 50px;
+    padding: 21px 0px;
+}
+
+.text__information{
+    padding: 11% 0px;
+    text-align: -webkit-match-parent;
+    width: 40%;
+    margin-right: 20%;
+}
+
+
+/* TÓPICOS */
+
+.topics{
+    width: 90%;
+    margin: 0 auto;
+    padding: 120px 0;
+    color: #6c6c70;
+}
+
+.topics__box{
+    display: flex;
+    justify-content: space-around;
+    font-size: 21px;
+}
+
+.topics__box > div{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.icons__topics{
+    width: 200px;
+}
+
+.title__icons{
+    padding: 25px 0;
+    font-size: 21px;
+    font-weight: bolder;
+    color: #793df5;
+}
+
+/* CARROSSEL */
+
+.carousel{
+    background: #ededf2;
+    padding: 70px 0;
+    position: relative;
+}
+
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    width: 98%;
+    top: 44%;
+}
+
+.carousel_empresas{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.my-slider{
+    display: flex;
+}
+
+.tns-outer [data-action] {
+    display: none;
+}
+
+.tns-outer{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_carousel{
+    max-width: 350px;
+    color: #6c6c70;
+}
+
+.text_carousel >p{
+    font-size: 21px;
+}
+
+.image_natura{
+    width: 300px;
+    padding-bottom: 26px;
+}
+
+.title_carousel{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.div_carousel{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.circule{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+/* FOOTER */
+
+.footer_image{
+    text-align: center;
+}
+
+.footer_image > img{
+    width: 40px;
+    padding: 47px 0;
+}
+

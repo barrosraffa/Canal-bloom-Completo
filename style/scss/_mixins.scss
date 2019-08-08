@@ -1,0 +1,57 @@
+@mixin flex ($aling, $justify) {
+    display: flex;
+    align-items: $aling;
+    justify-content: $justify;
+}
+
+@mixin button ($pd-x, $pd-y,$bg,$text, $bold){
+    padding: $pd-x $pd-y;
+    background-color: $bg;
+    font-weight: $bold;
+    font-size: 12px;
+    color: $text;
+
+}
+
+@mixin title ($transform, $color, $bold){
+    font-size: $font-size-title;
+    text-transform: $transform;
+    font-weight: $bold;
+    color: $color;
+}
+
+@mixin text ($transform, $color){
+    font-size: $font-size-text;
+    text-transform: $transform;
+    color: $color;
+}
+
+@mixin cards ($transform, $color, $bold){
+    font-size: $font-size-card;
+    text-transform: $transform;
+    font-weight: $bold;
+    color: $color;
+}
+
+@mixin img ($width, $height ){
+    width: $width;
+    height: $height;
+}
+
+@mixin link ($decoration, $transform, $color, $bold){
+    font-size: $font-size-link;
+    text-decoration: $decoration;
+    text-transform: $transform;
+    font-weight: $bold;
+    color: $color;
+}
+
+@mixin backimg ($img, $repeat, $size){
+    background-image: $img;
+    background-repeat: $repeat;
+    background-size: $size;
+}
+
+@mixin pdsection ($pd-x, $pd-y){
+    padding: $pd-x $pd-y;
+} 

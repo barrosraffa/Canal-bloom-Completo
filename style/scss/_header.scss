@@ -1,0 +1,663 @@
+/* START EDITION NAV */
+.navigation {
+    @include flex(center, space-between);
+    padding: 11px;
+
+    &>a img {
+        @include img(100%, 0%);
+        max-width: 120px;
+    }
+
+    .navegation__menu>a {
+        margin: 10px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    .menu__link {
+        @include link(none, uppercase, $color-darksecundary, bold);
+    }
+
+    .btn__login {
+        @include button(10px, 20px, $color-tertiary, $color-primary, bold);
+        border: 2px solid #793df5;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-tertiary;
+        }
+    }
+
+    .btn__register {
+        @include button(10px, 20px, $color-primary, $color-tertiary, bold);
+        border: 2px solid #793df5;
+        font-weight: bold;
+    }
+}
+
+/* END EDITION NAV */
+
+/* START PART ONE HOME/SLIDE */
+
+.banner-home {
+    position: relative;
+}
+
+.arrow__navegation--banner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide__home_1 {
+    background-color: #d8ffff;
+    height: 700px;
+    padding: 90px 0;
+
+    .slide__1 {
+        @include flex(center, center);
+    
+        .slide__content {
+            width: 100%;
+    
+            .section__content {
+                margin: 0 0 50px 0;
+            
+                h1 {
+                    @include title(capitalize, $color-primary, bold);
+                    font-size: 32px;
+                    margin: 0;
+                }
+            
+                p {
+                    @include text(initial, $color-clarprimary);
+                }
+            
+                button {
+                    @include button(10px, 20px, $color-primary, $color-tertiary, bold);
+            
+            
+                    &:hover {
+                        background-color: $color-clarprimary;
+                    }
+                }      
+            }
+        }
+    }
+}
+
+.slide__main_partners {
+    @include flex(center, center);
+    flex-direction: column;
+    text-align: center;
+    margin-right: 125px;
+
+    span {
+        @include text(initial, $color-secundary);
+    }
+
+    img{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .partners__main_logo {
+        @include flex(center, center);
+        margin: 30px;
+
+
+        img {
+            width: 85px;
+
+        }
+    }
+}
+
+.slide__content_main{
+
+    img {
+        width: 700px;
+    }
+    .section__icon {
+        display: flex;
+        margin: 0 auto;
+        width: 450px;
+       
+        img {
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            border: 2px solid #a680f4;
+            background-color: #fff;
+            margin: 5px;
+        }
+    }
+    
+    .slide__logo_apple{
+        margin-top: -120px;
+        margin-left: 500px;
+    
+        img {
+            width: 150px;
+        }
+    }
+
+}
+
+.slide__home_2{
+    @include backimg(url(../img/banner.hame.2.png),repeat,cover);
+    height: 700px;
+    padding: 90px 0;
+    @include flex(center,center);
+    
+
+    .slide__content_2{
+        @include flex(center,center);
+        align-items: flex-start;
+        margin-top:10%;
+
+        .video__slide2{
+            margin: 0 30px;
+        }
+    }
+
+    h1{
+        @include title(initial,$color-primary,bold);
+        font-size: 40px;
+        margin: 0;
+    }
+
+    p{
+        @include text(initial,$color-clarprimary);
+        font-weight: bold;
+        font-size: 18px;
+        margin: 40px 0px;
+    }
+}
+
+.slide__home_3{
+    @include backimg(url(../img/home.app.png),no-repeat,100%);
+    height: 700px;
+    padding: 90px 0;
+
+    .content__slide3{
+        width: 40%;
+
+        h1{
+            @include title(full-width,$color-tertiary,bold);
+        }
+
+        p{
+            @include text(full-width,$color-tertiary);
+            font-size: 25px;
+            font-family: 'MarkPro'
+        }
+
+        button{
+            @include button(10px, 20px,$color-quartenary,$color-tertiary,bold);
+
+            &:hover{
+                background-color: $color-ligquartenary;
+            }
+        }
+    }
+
+    .content__app__img__slide3{
+        display: flex;
+        justify-content: flex-end;
+    
+        img{
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
+
+
+/* START PART ONE HOME/SLIDE */
+
+
+/* START PART ONE HOME/WORKS */
+.works {
+    @include flex(center, space-around);
+    padding-top: 100px;
+    align-items: flex-start;
+    padding-bottom: 60px;
+
+    img {
+        width: 220px;
+        margin: 0 40px;
+    }
+
+    .works__title {
+        width: 70%;
+
+        h1 {
+            @include title(initial, $color-primary, bold);
+            margin: 0;
+        }
+
+        p {
+            @include text(initial, $color-secundary)
+        }
+
+        button {
+            @include button(10px, 20px, $color-primary, $color-tertiary, bold);
+
+            &:hover {
+                background-color: #a275df;
+            }
+        }
+    }
+}
+
+.content__icon {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    min-width: 300px;
+
+    img {
+        width: 40px;
+        margin: 0 30px;
+    }
+
+    h3 {
+        margin: 0;
+        @include text(uppercase, $color-primary);
+        font-weight: bold;
+    }
+
+    p {
+        @include text(initial, $color-secundary);
+        margin: 5px 0;
+    }
+}
+
+/* END PART ONE HOME/WORKS */
+
+/* START PART TWO HOME/SCIENCIES */
+.section__sciences {
+    @include backimg(url(../img/banner.home.16.png), repeat, initial);
+    @include pdsection(50px, 0px);
+    padding: 100px 0;
+
+
+    .sciencies__content {
+        @include flex(center, space-between);
+        align-items: flex-start;
+        justify-content: center;
+
+        .sciencies__text {
+            max-width: 500px;
+        }
+    }
+
+    & h2 {
+        @include title(full-width, $color-primary, bold);
+        margin-top: 0;
+    }
+
+    & p {
+        @include text(full-width, $color-secundary);
+        margin: 0 0 25px 0;
+    }
+
+    & a {
+        @include link(underline, uppercase, $color-primary, bold)
+    }
+}
+
+/* END PART TWO HOME/SCIENCIES */
+
+/* START EDITION TWO HOME/CARDS */
+.section__cards {
+    background-color: #d7cbf7;
+    text-align: center;
+
+    p {
+        text-decoration: none;
+        color: $color-secundary;
+    }
+
+    a {
+        @include link(underline, uppercase, $color-primary, bold);
+        display: block;
+        padding: 20px 0 40px 0;
+    }
+
+    .cards__title {
+        width: 50%;
+        margin: 0 auto;
+        padding: 50px;
+
+        h2 {
+            @include cards(capitalizar, $color-primary, bold);
+            margin: 0;
+            font-size: 30px;
+        }
+    }
+}
+
+.div__cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 40px;
+
+
+    .cards {
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0 5px 10px #bbb;
+        position: relative;
+        transition: .5s all;
+        border: 2px solid white;
+
+        .cards__content {
+            width: 100%;
+            top: 10%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &>h4 {
+                @include cards(capitalize, $color-darksecundary, bold);
+                text-align: center;
+                width: 80%;
+                margin: 0;
+                padding-bottom: 3px;
+                border-bottom: 1px solid #d7cbf7;
+                transition: 1s all;
+            }
+
+            .div__values {
+                position: relative;
+                display: flex;
+                margin: 50px 0 0;
+                max-width: 120px;
+                color: $color-darksecundary;
+
+                .cards__valor {
+                    font-size: 75px;
+                }
+
+                .cards__cents {
+                    font-size: 28px;
+                }
+
+                .cards__mes {
+                    position: absolute;
+                    font-size: 18px;
+                    bottom: 22px;
+                    right: -35px;
+                    left: 40px;
+                }
+            }
+
+            &>p {
+                margin: 0 20px 30px 20px;
+                font-size: 14px;
+                color: $color-secundary;
+            }
+
+            &>button {
+                @include button(7px, 25px, $color-tertiary, $color-primary, bold);
+                border: 2px solid #793df5;
+                position: absolute;
+                top: 280px;
+                transition: 1s all;
+
+                &:hover {
+                    background-color: #793df5;
+                    color: $color-tertiary;
+                }
+            }
+        }
+
+        .cards__text_active {
+            display: none;
+            background-color: #793df5;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            border-radius: 0;
+            top: 0;
+            left: 0;
+            //transition: .5s height, 1s border-radius ;
+        }
+
+        &.cards__active {
+            width: 250px;
+            // height: 380px;
+            border: 3px solid #793df5;
+            transition-duration: 0.5s;
+            box-shadow: 0 5px 10px #bbb;
+            transition-duration: 0.01s;
+
+            .discount {
+                color: $color-tertiary;
+            }
+
+            h4 {
+                margin-top: 50px;
+            }
+
+            button {
+                top: 280px;
+            }
+
+            .cards__text_active {
+                display: block;
+                height: 50px;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+    }
+}
+
+/* END EDITION TWO HOME/CARDS */
+
+/* START EDITION TWO HOME/DEPOIMENTOS*/
+.testimony {
+    @include backimg(url(../img/banner.depoimentos.png),repeat, cover);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .testimony__content {
+        position: relative;
+        margin: 0 auto;
+
+
+        &>h2 {
+            @include title(capitalize, $color-tertiary, bold);
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+
+
+        .arrow__navegation {
+            position: absolute;
+            top: 60%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
+
+            :focus {
+                outline: none;
+            }
+        }
+    }
+
+}
+
+.cards__testimony_content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+
+    .cards__testimony {
+        background-color: $color-tertiary;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        max-width: 30%;
+
+        h2 {
+            @include cards(capitalize, $color-secundary, bold);
+        }
+    }
+
+    .tns-ovh {
+        width: 100%;
+    }
+    
+    .tns-outer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tns-outer [data-action] {
+        display: none;
+    }
+}
+
+
+
+
+/* END EDITION TWO HOME/DEPOIMENTOS */
+
+
+
+/* START NOSSO PARCEIROS HOME */
+.partners {
+    background-color: #a275df;
+    text-align: center;
+
+    .partners__content {
+        &>h2 {
+            margin: 0;
+            color: $color-tertiary;
+            padding: 30px;
+        }
+
+        .partners__logo {
+            @include flex(center, center);
+            padding: 30px;
+
+            &>img {
+                width: 150px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.icons__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons__footer {
+    background-color: #b8b8be;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary;
+
+    }
+
+    &>img {
+        width: 18px;
+    }
+}
+
+.div__support {
+    background-color: #793df5;
+
+    .support__title {
+        color: $color-tertiary;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .support__img {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 40px 0;
+        width: 80%;
+        margin: 0 auto;
+
+        &>img {
+            height: 70px;
+
+
+            &.img__kids {
+                max-height: 80px;
+            }
+        }
+    }
+
+}
+
+/* END NOSSO PARCEIROS HOME */
+
+/* START FOOTER */
+.footer__white {
+    background-color: $color-tertiary;
+    text-align: center;
+    padding: 60px 0 0 0;
+
+    &>img {
+        width: 30px;
+    }
+
+    .links__footer {
+        margin: 0 auto;
+        width: 400px;
+        padding: 40px 0px;
+
+        &>a {
+            @include link(none, capitalize, $color-secundary, bold);
+            margin: 0 2px;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &>p {
+        color: $color-secundary;
+    }
+}
+
+
+/* END FOOTER */
